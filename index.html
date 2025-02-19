@@ -36,9 +36,9 @@ src="https://www.facebook.com/tr?id=635654032461043&ev=PageView&noscript=1"
     
     <style type="text/css">
       body {
-        color: white;
+        color: rgb(0, 0, 0);
         background-image: url("assets/img/bg.jpeg");
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: #f0f1f5;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -55,7 +55,7 @@ src="https://www.facebook.com/tr?id=635654032461043&ev=PageView&noscript=1"
           <div class="col-lg-8 text-center">
             
 
-            <p><span id="peopleCount">300</span> pessoas de  <b><span id="address" style="color: #fff;"></span></b> estão assistindo esse vídeo</p>
+            <p><span id="peopleCount">300</span> Personas de  <b><span id="address" style="color: #000000;"></span></b> están viendo este video</p>
 
 <!--SCRIPT GEOLOCALIZAÇÃO-->
 
@@ -76,13 +76,13 @@ src="https://www.facebook.com/tr?id=635654032461043&ev=PageView&noscript=1"
     var numeroAtual = parseInt(peopleCountElement.innerText, 10);
 
     // Aumenta o número em 1
-    var novoNumero = numeroAtual + 1;
+    var novoNumero = numeroAtual + 4;
 
     // Atualiza o conteúdo do elemento
     peopleCountElement.innerText = novoNumero;
 
     // Chama a função novamente após 30 segundos (30000 milissegundos)
-    setTimeout(aumentarNumero, 30000);
+    setTimeout(aumentarNumero, 15000);
   }
 
   // Inicia o aumento quando a página carrega
